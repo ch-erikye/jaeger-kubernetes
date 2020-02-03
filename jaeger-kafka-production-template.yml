@@ -63,7 +63,7 @@ items:
                   valueFrom:
                     configMapKeyRef:
                       name: jaeger-configuration
-                      key: span-storage-type
+                      key: collector-span-storage-type
           volumes:
             - configMap:
                 name: jaeger-configuration
@@ -165,7 +165,7 @@ items:
                   valueFrom:
                     configMapKeyRef:
                       name: jaeger-configuration
-                      key: span-storage-type
+                      key: query-span-storage-type
           volumes:
             - configMap:
                 name: jaeger-configuration
